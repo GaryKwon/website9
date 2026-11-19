@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#e3e8e7"/><title>Instrument / 01</title><link rel="stylesheet" href="style.css"/></head>
+<body><main class="page">
+<section class="instrument" id="instrument" aria-label="Reactive audiovisual instrument">
+<canvas id="render" class="render-surface" aria-label="Animated instrument"></canvas>
+<img id="portrait" class="character" src="default-character.jpg" alt="Reference character artwork" draggable="false" />
+<canvas id="gif-render" class="gif-surface" width="504" height="389" hidden aria-label="Animated uploaded artwork"></canvas>
+<button id="image-hit" class="image-hit" aria-label="Replace artwork with image or GIF" title="Replace image (I)"></button>
+<button id="dot-play" class="dot-button dot-one" aria-label="Play or pause" title="Play/pause"></button>
+<button id="dot-music" class="dot-button dot-two" aria-label="Toggle music" title="Generate music"></button>
+<button id="dot-mute" class="dot-button dot-three" aria-label="Mute" title="Mute"></button>
+<div class="toolstrip" id="toolstrip"><button id="image-button">IMAGE</button><button id="audio-button">AUDIO</button><button id="music-button">GENERATE</button><button id="play-button">PAUSE</button><button id="mute-button">MUTE</button><button id="reset-button">RESET</button></div>
+<input id="image-input" type="file" accept="image/png,image/jpeg,image/webp,image/gif" class="sr-only" aria-label="Choose image or GIF"/>
+<input id="audio-input" type="file" accept="audio/*" class="sr-only" aria-label="Choose audio"/>
+<div id="drop-overlay" class="drop-overlay" hidden>DROP IMAGE / GIF / AUDIO</div>
+</section>
+<div class="mobile-controls"><button id="image-mobile">IMAGE</button><button id="audio-mobile">AUDIO</button><button id="music-mobile">SOUND</button><button id="play-mobile">PAUSE</button></div>
+<div id="status" class="status-panel" role="status">Ready. Replace the image to alter the instrument.</div>
+</main><script defer src="standalone.js"></script></body></html>
